@@ -5,7 +5,10 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "nodemon lib/index.js"
-  },
+	},
+	"engines": {
+		"node": ">=10.0"
+	},
   "files": [
     "lib"
   ],
