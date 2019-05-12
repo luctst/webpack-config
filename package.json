@@ -4,7 +4,7 @@
   "description": "CLI tool to get an optimize webpack configuration for your project  📦  📦",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nodemon lib/index.js"
   },
   "files": [
     "lib"
@@ -27,7 +27,9 @@
   "homepage": "https://github.com/luctst/webpack-config#readme",
   "dependencies": {
     "chalk": "^2.4.2",
-    "inquirer": "^6.3.1"
+    "figlet": "^1.2.1",
+    "inquirer": "^6.3.1",
+    "yargs": "^13.2.2"
   },
   "devDependencies": {
     "nodemon": "^1.19.0"
