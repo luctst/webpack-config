@@ -1,0 +1,29 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "description": "",
+	"main": "lib/index.js",
+	"files": [
+		"lib/build/",
+		"scripts/"
+	],
+	"engines": {
+		"node": ""
+	},
+  "scripts": {
+		"init": "node script/init.js",
+		"lint": "",
+		"style": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/luctst/"
+  },
+  "keywords": [],
+  "author": "Tostée Lucas <lucas.tostee@gmail.com> (https://www.lucas-tostee.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://www.github.com/luctst/"
+  },
+  "homepage": "https://www.github.com/luctst"
+}
