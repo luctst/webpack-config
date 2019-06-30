@@ -1,17 +1,16 @@
 {
-  "name": "",
+	"name": "",
   "version": "1.0.0",
   "description": "",
 	"main": "lib/index.js",
 	"files": [
-		"lib/build/",
-		"scripts/"
+		"lib/build/"
 	],
 	"engines": {
 		"node": ""
 	},
   "scripts": {
-		"init": "node script/init.js",
+		"init": "node scripts/init.js",
 		"lint": "",
 		"style": ""
   },
