@@ -1,0 +1,35 @@
+{
+ "name": "",
+ "version": "1.0.0",
+ "description": "",
+ "main": "lib/index.js",
+ "files": [
+  "lib/",
+  "./scripts/"
+ ],
+ "engines": {
+  "node": ""
+ },
+ "scripts": {
+  "test": "npx ava ./test/*.js --watch --verbose",
+  "create": "node scripts/init.js",
+  "lint": "",
+  "style": ""
+ },
+ "repository": {
+  "type": "git",
+  "url": ""
+ },
+ "keywords": [],
+ "author": "Tostée Lucas <lucas.tostee@gmail.com> (https://www.lucas-tostee.com)",
+ "license": "MIT",
+ "bugs": {
+  "url": ""
+ },
+ "homepage": "",
+ "devDependencies": {
+  "ava": "^2.1.0",
+  "eslint": "^6.0.1",
+  "prettier": "^1.18.2"
+ }
+}
