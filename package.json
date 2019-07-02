@@ -1,28 +1,38 @@
 {
-	"name": "",
-  "version": "1.0.0",
-  "description": "",
-	"main": "lib/index.js",
-	"files": [
-		"lib/build/"
-	],
-	"engines": {
-		"node": ""
-	},
-  "scripts": {
-		"init": "node scripts/init.js",
-		"lint": "",
-		"style": ""
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://www.github.com/luctst/"
-  },
-  "keywords": [],
-  "author": "Tostée Lucas <lucas.tostee@gmail.com> (https://www.lucas-tostee.com)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://www.github.com/luctst/"
-  },
-  "homepage": "https://www.github.com/luctst"
+ "name": "NAME",
+ "version": "1.0.0",
+ "description": "DESCRIPTION",
+ "main": "lib/index.js",
+ "files": [
+  "lib/",
+  "./scripts/"
+ ],
+ "engines": {
+  "node": "VERSION"
+ },
+ "scripts": {
+  "test": "npx ava ./test/*.js --watch --verbose",
+  "create": "node scripts/init.js",
+  "lint": "",
+  "style": ""
+ },
+ "repository": {
+  "type": "git",
+  "url": "REPO"
+ },
+ "keywords": [],
+ "author": "Tostée Lucas <lucas.tostee@gmail.com> (https://www.lucas-tostee.com)",
+ "license": "MIT",
+ "bugs": {
+  "url": "REPO/issues"
+ },
+ "homepage": "REPO",
+ "devDependencies": {
+  "ava": "^2.1.0",
+  "eslint": "^6.0.1",
+  "prettier": "^1.18.2"
+ },
+ "dependencies": {
+  "replace-in-file": "^4.1.0"
+ }
 }
