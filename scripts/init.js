@@ -22,13 +22,13 @@
 		}
 	}
 
-	const replaceContent = (fieldToReplace, input) => {
+	const replaceContent = (property, input) => {
 		const newAnswers = { ...initProcess.answers };
-		newAnswers[fieldToReplace] = input;
+		newAnswers[property] = input;
 		initProcess.answers = { ...newAnswers };
 
 		if (initProcess.steps !== initProcess.questions.length) {
-			initProcess.steps++;
+			return initProcess.steps++;
 		} else {
 			console.log("\x1b[35m%s\x1b[0m", "Your package.json file was configurated");
 
@@ -42,7 +42,7 @@
 					initProcess.answers.url
 				],
 				countMatches: true,
-				allowEmptyPaths: true,
+				allowEmptyPaths: true
 			});
 
 			process.exit(0);
@@ -57,8 +57,10 @@
 			console.log("\x1b[35m%s\x1b[0m", "You should enter data !");
 			rl.prompt();
 		} else {
-			console.log(`${initProcess.steps} - ${initProcess.questions[initProcess.steps]}`);
-			rl.prompt();
+			if (initProcess.steps !== initProcess.questions.length) {
+				console.log(`${initProcess.steps} - ${initProcess.questions[initProcess.steps]}`);
+				rl.prompt();
+			}
 
 			switch (initProcess.steps) {
 				case 0:
