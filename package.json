@@ -13,7 +13,7 @@
  "scripts": {
   "test": "npx ava ./test/*.js --watch --verbose",
   "create": "node scripts/init.js",
-  "lint": "",
+  "lint": "npx eslint --quiet lib/*.js",
   "style": ""
  },
  "repository": {
@@ -30,6 +30,8 @@
  "devDependencies": {
   "ava": "^2.1.0",
   "eslint": "^6.0.1",
+  "eslint-config-prettier": "^6.0.0",
+  "eslint-plugin-prettier": "^3.1.0",
   "prettier": "^1.18.2"
  },
  "dependencies": {
