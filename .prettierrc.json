@@ -1,5 +1,6 @@
 {
   "semicolons": true,
   "arrowFunctionsParentheses": "avoid",
-  "bracketSetting": true
+	"bracketSetting": true,
+	"printerWidth": 90
 }
