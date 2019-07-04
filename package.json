@@ -11,10 +11,12 @@
   "node": "VERSION"
  },
  "scripts": {
-  "test": "npx ava ./test/*.js --watch --verbose",
-  "create": "node scripts/init.js",
-  "lint": "npx eslint --quiet lib/*.js",
-  "style": ""
+  "create": "node ./scripts/init.js",
+  "test": "npx ava ./test/*.js --verbose",
+  "test:watch": "npx ava ./test/*.js --watch --verbose",
+  "lint": "npx estlint --cache ./lib/*.js",
+  "lint:watch": "esw -w --clear --color --cache ./lib/*.js",
+  "style": "prettier -c --debug-check ./lib/*.js"
  },
  "repository": {
   "type": "git",
@@ -30,8 +32,11 @@
  "devDependencies": {
   "ava": "^2.1.0",
   "eslint": "^6.0.1",
+  "eslint-config-airbnb-base": "^13.2.0",
   "eslint-config-prettier": "^6.0.0",
+  "eslint-plugin-import": "^2.18.0",
   "eslint-plugin-prettier": "^3.1.0",
+  "eslint-watch": "^5.1.2",
   "prettier": "^1.18.2"
  },
  "dependencies": {
