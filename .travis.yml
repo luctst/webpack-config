@@ -7,6 +7,8 @@ os:
 cache:
   directories:
     - node_modules
+before_install:
+  - npm i -g npm@latest
 install:
 - npm install
 script:
