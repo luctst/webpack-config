@@ -47,12 +47,6 @@ workflows:
   build_and_test:
     jobs:
       - install
-      - lint_and_style:
-          requires:
-            - install
-      - test:
-          requires:
-            - install
-      - test_style:
-          requires:
-            - install
+      - lint_and_style
+      - test
+      - test_style
