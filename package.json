@@ -14,9 +14,11 @@
   "create": "node ./scripts/init.js",
   "test": "npx ava ./test/*.js --verbose",
   "test:watch": "npx ava ./test/*.js --watch --verbose",
-  "lint": "npx estlint --cache ./lib/*.js",
+  "lint": "npx eslint --cache ./lib/*.js",
   "lint:watch": "esw -w --clear --color --cache ./lib/*.js",
-  "style": "prettier -c --debug-check ./lib/*.js"
+  "lint:fix": "npx eslint --fix ./lib/*.js",
+  "style": "prettier -c ./lib/*.js",
+  "style:fix": "prettier --c --write ./lib/*.js"
  },
  "repository": {
   "type": "git",
