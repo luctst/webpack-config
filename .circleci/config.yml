@@ -1,10 +1,15 @@
 version: 2
 jobs:
   install:
+    working_directory: ~/mern-starter
     docker:
-      - image: circleci/node10.0.0
+      - image: circleci/node:4.8.2-jessie
+      - image: mongo:3.4.4-jessie
     steps:
       - checkout
+      - run:
+          name: Update npm
+          command: 'sudo npm install -g npm@latest'
       - run:
           name: Install npm wee
           command: npm install
