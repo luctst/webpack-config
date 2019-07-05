@@ -1,6 +1,9 @@
 language: node
 node_js:
 - "lts/*"
+os:
+- linux
+- osx
 cache:
   directories:
     - node_modules
