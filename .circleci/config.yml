@@ -1,5 +1,19 @@
 version: 2
 jobs:
+  install:
+    docker:
+      - image: circleci/node10.0.0
+    steps:
+      - checkout
+      - run:
+          name: Install npm wee
+          command: npm install
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - node_modules
   lint_and_style:
     docker:
       - image: circleci/node:10.0.0
@@ -28,6 +42,13 @@ workflows:
   version: 2
   build_and_test:
     jobs:
-      - lint_and_style
-      - test
-      - test_style
+      - build
+      - lint_and_style:
+          requires:
+            - build
+      - test:
+          requires:
+            - build
+      - test_style:
+          requires:
+            - build
