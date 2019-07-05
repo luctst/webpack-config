@@ -1,44 +1,37 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/mern-starter
-    # The primary container is an instance of the first image listed. The job's commands run in this container.
     docker:
-      - image: circleci/node:4.8.2-jessie
-    # The secondary container is an instance of the second listed image which is run in a common network where ports exposed on the primary container are available on localhost.
-      - image: mongo:3.4.4-jessie
+      - image: circleci/node:10.0.0
     steps:
       - checkout
       - run:
-          name: Update npm
-          command: 'sudo npm install -g npm@latest'
-      - restore_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
-      - run:
-          name: Install npm wee
+          name: Install Dependencies
           command: npm install
-      - save_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
-          paths:
-            - node_modules
   lint_and_style:
     docker:
       - image: circleci/node:10.0.0
     steps:
       - checkout
-      - run: npm run lint
+      - run:
+          name: Lint your lib
+          command: npm run lint
   test:
     docker:
       - image: circleci/node:10.0.0
     steps:
       - checkout
-      - run: npm test
+      - run:
+          name: Test your code with AVA
+          command: npm test
   test_style:
     docker:
       - image: circleci/node:10.0.0
     steps:
       - checkout
-      - run: npm run style
+      - run:
+          name: Check style with Prettier
+          command: npm run style
 workflows:
   version: 2
   build_and_test:
