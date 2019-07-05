@@ -37,11 +37,11 @@ workflows:
   build_and_test:
     jobs:
       - lint_and_style:
-        requires:
+            requires:
             - build
       - test:
-        requires:
+            requires:
             - build
       - test_style:
-        requires:
+          requires:
             - build
