@@ -1,13 +1,5 @@
 version: 2
 jobs:
-  build:
-    docker:
-      - image: circleci/node:10.0.0
-    steps:
-      - checkout
-      - run:
-          name: Install Dependencies
-          command: npm install
   lint_and_style:
     docker:
       - image: circleci/node:10.0.0
@@ -36,12 +28,6 @@ workflows:
   version: 2
   build_and_test:
     jobs:
-      - lint_and_style:
-            requires:
-            - build
-      - test:
-            requires:
-            - build
-      - test_style:
-          requires:
-            - build
+      - lint_and_style
+      - test
+      - test_style
