@@ -1,7 +1,7 @@
 {
   "name": "webpack-config",
   "version": "1.0.0",
-  "description": "CLI tool to get an optimize webpack configuration for your project  📦  📦",
+  "description": "CLI tool to get an optimize webpack configuration for your project  📦 📦",
   "main": "lib/index.js",
   "scripts": {
     "test": "nodemon lib/index.js"
@@ -10,7 +10,7 @@
     "node": ">=10.0"
   },
   "files": [
-    "lib"
+    "lib/"
   ],
   "repository": {
     "type": "git",
@@ -20,19 +20,17 @@
     "cli",
     "cli-tool",
     "webpack-config",
-    "nodejs"
+		"nodejs",
+		"webpack",
+		"webpack-boilerplate"
   ],
-  "author": "",
-  "license": "ISC",
+  "author": "Tostée Lucas, <lucas.tostee@gmail.com>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/luctst/webpack-config/issues"
   },
   "homepage": "https://github.com/luctst/webpack-config#readme",
   "dependencies": {
-    "chalk": "^2.4.2",
-    "commander": "^2.20.0",
-    "figlet": "^1.2.1",
-    "inquirer": "^6.3.1"
   },
   "devDependencies": {
     "nodemon": "^1.19.0"
