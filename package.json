@@ -4,13 +4,14 @@
   "description": "CLI tool to get an optimize webpack configuration for your project  📦 📦",
   "main": "lib/index.js",
   "scripts": {
-		"test": "npx ava ./test/*.js --verbose",
-		"test:watch": "npx ava ./test/*.js --watch --verbose",
-		"lint": "npx eslint --cache ./lib/*.js",
-		"lint:watch": "esw -w --clear --color --cache ./lib/*.js",
-		"lint:fix": "npx eslint --fix ./lib/*.js",
-		"style": "prettier -c ./lib/*.js",
-		"style:fix": "prettier --c --write ./lib/*.js"
+		"start": "nodemon lib/index.js",
+    "test": "npx ava ./test/*.js --verbose",
+    "test:watch": "npx ava ./test/*.js --watch --verbose",
+    "lint": "npx eslint --cache ./lib/*.js",
+    "lint:watch": "esw -w --clear --color --cache ./lib/*.js",
+    "lint:fix": "npx eslint --fix ./lib/*.js",
+    "style": "prettier -c ./lib/*.js",
+    "style:fix": "prettier --c --write ./lib/*.js"
   },
   "engines": {
     "node": ">=10.0.0"
@@ -26,9 +27,9 @@
     "cli",
     "cli-tool",
     "webpack-config",
-		"nodejs",
-		"webpack",
-		"webpack-boilerplate"
+    "nodejs",
+    "webpack",
+    "webpack-boilerplate"
   ],
   "author": "Tostée Lucas, <lucas.tostee@gmail.com>",
   "license": "MIT",
@@ -37,16 +38,17 @@
   },
   "homepage": "https://github.com/luctst/webpack-config#readme",
   "dependencies": {
+    "meow": "^5.0.0"
   },
   "devDependencies": {
-		"nodemon": "^1.19.0",
-		"ava": "^2.1.0",
-		"eslint": "^6.0.1",
-		"eslint-config-airbnb-base": "^13.2.0",
-		"eslint-config-prettier": "^6.0.0",
-		"eslint-plugin-import": "^2.18.0",
-		"eslint-plugin-prettier": "^3.1.0",
-		"eslint-watch": "^5.1.2",
-		"prettier": "^1.18.2"
+    "nodemon": "^1.19.0",
+    "ava": "^2.1.0",
+    "eslint": "^6.0.1",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-watch": "^5.1.2",
+    "prettier": "^1.18.2"
   }
 }
