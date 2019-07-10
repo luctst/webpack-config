@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "webpack-dev-server --color --env.NODE_ENV=dev"
+    "start": "webpack-dev-server --env.NODE_ENV=dev"
   },
   "devDependencies": {
     "@babel/core": "^7.5.0",
