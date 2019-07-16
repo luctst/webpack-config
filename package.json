@@ -2,9 +2,8 @@
   "name": "webpack-config",
   "version": "1.0.0",
   "description": "CLI tool to get an optimize webpack configuration for your project  📦 📦",
-  "main": "lib/index.js",
+  "main": "lib/cli.js",
   "scripts": {
-		"start": "node lib/index.js",
     "test": "npx ava ./test/*.js --verbose",
     "test:watch": "npx ava ./test/*.js --watch --verbose",
     "lint": "npx eslint --cache ./lib/*.js",
@@ -18,7 +17,10 @@
   },
   "files": [
     "lib/"
-  ],
+	],
+	"bin": {
+		"webpack-config": "lib/cli.js"
+	},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/luctst/webpack-config.git"
@@ -38,6 +40,8 @@
   },
   "homepage": "https://github.com/luctst/webpack-config#readme",
   "dependencies": {
+    "copy-dir": "^1.1.0",
+    "inquirer": "^6.5.0",
     "meow": "^5.0.0"
   },
   "devDependencies": {
