@@ -17,10 +17,10 @@
   },
   "files": [
     "lib/"
-	],
-	"bin": {
-		"webpack-config": "lib/cli.js"
-	},
+  ],
+  "bin": {
+    "webpack-config": "lib/cli.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/luctst/webpack-config.git"
