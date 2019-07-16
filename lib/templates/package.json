@@ -1,0 +1,20 @@
+{
+	"name": "",
+	"version": "1.0.0",
+	"description": "",
+	"scripts": {
+		"start": "webpack-dev-server --mode=development",
+		"build": "webpack --mode=production"
+	},
+	"devDependencies": {
+		"@babel/core": "",
+		"babel-loader": "",
+		"file-loader": "",
+		"friendly-errors-webpack-plugin": "",
+		"html-webpack-plugin": "",
+		"script-ext-html-webpack-plugin": "",
+		"webpack": "",
+		"webpack-cli": "",
+		"webpack-dev-server": ""
+	}
+}
