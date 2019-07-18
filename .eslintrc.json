@@ -7,8 +7,5 @@
 	"plugins": ["prettier"],
 	"rules": {
 		"prettier/prettier": 1
-	},
-	"eslintIgnore": [
-		"./lib/build/"
-	]
+	}
 }
