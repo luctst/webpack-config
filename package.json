@@ -2,7 +2,8 @@
   "name": "webpack-config",
   "version": "1.0.0",
   "description": "CLI tool to get an optimize webpack configuration for your project  📦 📦",
-  "main": "lib/cli.js",
+	"main": "lib/cli.js",
+	"eslintIgnore": ["./lib/build/"],
   "scripts": {
     "test": "npx ava ./test/*.js --verbose",
     "test:watch": "npx ava ./test/*.js --watch --verbose",

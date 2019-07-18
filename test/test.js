@@ -1,4 +1,5 @@
-const test = require("ava");
-const webpack = require("../lib/templates/webpack.config");
+import test from "ava";
 
-test.todo("Implement test if need later");
+test("Repo-template fake test :)", t => {
+	t.pass();
+});
