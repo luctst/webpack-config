@@ -1,7 +1,7 @@
 {
  "name": "repo-template",
  "version": "1.0.0",
- "description": "DESCRIPTION",
+ "description": "Project boilerplate for easily create and share your new cool modules. ♻️ ♻️",
  "main": "lib/index.js",
  "files": [
   "lib/",
@@ -11,7 +11,6 @@
   "node": ">= 10.0.0"
  },
  "scripts": {
-  "create": "node ./scripts/init.js",
   "test": "ava --verbose ./test/*.js",
   "test:watch": "ava --watch --verbose ./test/*.js",
   "lint": "npx eslint --cache './lib/*.js'",
