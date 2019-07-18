@@ -1,5 +1,5 @@
 {
- "name": "NAME",
+ "name": "repo-template",
  "version": "1.0.0",
  "description": "DESCRIPTION",
  "main": "lib/index.js",
@@ -8,29 +8,29 @@
   "./scripts/"
  ],
  "engines": {
-  "node": "VERSION"
+  "node": ">= 10.0.0"
  },
  "scripts": {
   "create": "node ./scripts/init.js",
-  "test": "npx ava ./test/*.js --verbose",
-  "test:watch": "npx ava ./test/*.js --watch --verbose",
-  "lint": "npx eslint --cache ./lib/*.js",
-  "lint:watch": "esw -w --clear --color --cache ./lib/*.js",
-  "lint:fix": "npx eslint --fix ./lib/*.js",
-  "style": "prettier -c ./lib/*.js",
-  "style:fix": "prettier --c --write ./lib/*.js"
+  "test": "ava --verbose ./test/*.js",
+  "test:watch": "ava --watch --verbose ./test/*.js",
+  "lint": "npx eslint --cache './lib/*.js'",
+  "lint:watch": "esw -w --clear --color --cache './lib/*.js'",
+  "lint:fix": "npx eslint --fix './lib/*.js'",
+  "style": "prettier -c './lib/*.js'",
+  "style:fix": "prettier --c --write './lib/*.js'"
  },
  "repository": {
   "type": "git",
-  "url": "REPO"
+  "url": "https://www.github.com/luctst/repo-template"
  },
  "keywords": [],
  "author": "Tostée Lucas <lucas.tostee@gmail.com> (https://www.lucas-tostee.com)",
  "license": "MIT",
  "bugs": {
-  "url": "REPO/issues"
+  "url": "https://www.github.com/luctst/repo-template/issues"
  },
- "homepage": "REPO",
+ "homepage": "https://www.github.com/luctst/repo-template",
  "devDependencies": {
   "ava": "^2.1.0",
   "eslint": "^6.0.1",
