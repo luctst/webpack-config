@@ -1,3 +1,5 @@
-const test = require("ava");
+import test from "ava";
 
-test.todo("Implement test if need later");
+test("Repo-template fake test :)", t => {
+	t.pass();
+});
