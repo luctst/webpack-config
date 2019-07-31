@@ -63,3 +63,6 @@ typings/
 
 # vscode config
 .vscode
+
+# Production code
+build/
