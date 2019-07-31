@@ -2,11 +2,11 @@
   "name": "webpack-config",
   "version": "1.0.0",
   "description": "CLI tool to get an optimize webpack configuration for your project  📦 📦",
-	"main": "lib/cli.js",
-	"eslintIgnore": [
-		"./lib/build/",
-		"./lib/templates/"
-	],
+  "main": "lib/cli.js",
+  "eslintIgnore": [
+    "./lib/build/",
+    "./lib/templates/"
+  ],
   "scripts": {
     "test": "npx ava ./test/*.js --verbose",
     "test:watch": "npx ava ./test/*.js --watch --verbose",
@@ -22,9 +22,7 @@
   "files": [
     "lib/"
   ],
-  "bin": {
-    "webpack-config": "lib/cli.js"
-  },
+  "bin": "./lib/cli.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/luctst/webpack-config.git"
@@ -35,7 +33,11 @@
     "webpack-config",
     "nodejs",
     "webpack",
-    "webpack-boilerplate"
+    "webpack-boilerplate",
+    "generate-webpack-config",
+    "webpack-boilerplate",
+    "generator-app",
+    "cli-generate-webpack"
   ],
   "author": "Tostée Lucas, <lucas.tostee@gmail.com>",
   "license": "MIT",
@@ -45,11 +47,9 @@
   "homepage": "https://github.com/luctst/webpack-config#readme",
   "dependencies": {
     "copy-dir": "^1.1.0",
-    "inquirer": "^6.5.0",
-    "meow": "^5.0.0"
+    "inquirer": "^6.5.0"
   },
   "devDependencies": {
-    "nodemon": "^1.19.0",
     "ava": "^2.1.0",
     "eslint": "^6.0.1",
     "eslint-config-airbnb-base": "^13.2.0",
@@ -57,6 +57,11 @@
     "eslint-plugin-import": "^2.18.0",
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-watch": "^5.1.2",
-    "prettier": "^1.18.2"
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "html-webpack-plugin": "^3.2.0",
+    "nodemon": "^1.19.0",
+    "prettier": "^1.18.2",
+    "script-ext-html-webpack-plugin": "^2.1.4",
+    "webpack": "^4.38.0"
   }
 }
